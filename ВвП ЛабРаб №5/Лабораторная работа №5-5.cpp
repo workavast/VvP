@@ -4,7 +4,14 @@ int main()
 {
     double x1,y1,x2,y2,x3,y3;
 
-    std::cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
+    setlocale(LC_ALL, "Russian");
+    std::cout << "Введите координаты первой точки через пробел" << std::endl;
+    std::cin >> x1 >> y1;
+    std::cout << "Введите координаты второй точки через пробел" << std::endl;
+    std::cin >> x2 >> y2;
+    std::cout << "Введите координаты третьей точки через пробел" << std::endl;
+    std::cin >> x3 >> y3;
+
 
     double x12 = abs(x1 - x2);//длинна стороны по оси х
     double y12 = abs(y1 - y2);//длинна стороны по оси у
@@ -22,8 +29,8 @@ int main()
     double P = xy12 + xy13 + x23;//периметр
     double S = 0.5*abs((x2-x1)*(y3-y1)-(y2-y1)*(x3-x1)) ;//площадь
 
-    std::cout << "P = " << P << std::endl;
-    std::cout << "S = " << S << std::endl;
+    std::cout << "Периметр треугольника = " << P << std::endl;
+    std::cout << "Площадь треугольника = " << S << std::endl;
 
     return 0;
 }
