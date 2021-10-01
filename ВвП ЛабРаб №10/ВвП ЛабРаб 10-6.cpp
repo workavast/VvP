@@ -3,7 +3,9 @@
 int main()
 {
     int a, b, c;
-    
+
+    setlocale(LC_ALL, "Russian");
+    std::cout << "Введите через пробел длинны трех сторон треугольника" << std::endl;
     std::cin >> a >> b >> c;
 
     int a1 = (b * b + c * c) / a;//находим сторону a по теореме пифагора
@@ -16,9 +18,8 @@ int main()
 
     bool d = a2 + b2 + c2;
 
-    setlocale(LC_ALL, "Russian");
     std::cout << std::boolalpha;
-    std::cout << "Треугольник со сторонами a, b, c является прямоугольным \n"<< "Ответ: " << d << std::endl;
+    std::cout << "Является ли треугольник со сторонами a, b, c прямоугольным \n" << "Ответ: " << d << std::endl;
 
     return 0;
 }

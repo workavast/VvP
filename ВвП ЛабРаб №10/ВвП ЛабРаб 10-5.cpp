@@ -4,6 +4,8 @@ int main()
 {
     int a;
 
+    setlocale(LC_ALL, "Russian");
+    std::cout << "Введите четырехзначное чило" << std::endl;
     std::cin >> a;
 
     int b = a / 100;//выделяем первую и вторую цифру
@@ -17,7 +19,7 @@ int main()
 
     setlocale(LC_ALL, "Russian");
     std::cout << std::boolalpha;
-    std::cout << "Данное число читается одинаково слева направо и справа налево \n" << "Ответ: " << c << std::endl;
+    std::cout << "Читается ли данное число одинаково слева направо и справа налево \n" << "Ответ: " << c << std::endl;
 
     return 0;
 }

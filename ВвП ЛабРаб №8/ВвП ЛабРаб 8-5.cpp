@@ -4,6 +4,8 @@ int main()
 {
     int a, b, c, total;
 
+    setlocale(LC_ALL, "Russian");
+    std::cout << "Введите трехзначное число" << std::endl;
     std::cin >> a;
 
     b = a / 100;//выделяем первую цифру
@@ -11,7 +13,7 @@ int main()
     total = c * 10 + b;//приписываем справа к двузначному числу первую цифру
 
     setlocale(LC_ALL, "Russian");
-    std::cout << "Полученное число = " << total << std::endl;
+    std::cout << "Полученное число после перестановки первой цифры в конец = " << total << std::endl;
 
     return 0;
 }

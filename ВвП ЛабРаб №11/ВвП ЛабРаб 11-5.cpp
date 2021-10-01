@@ -4,32 +4,33 @@ int main()
 {
     int a;
 
+    setlocale(LC_ALL, "Russian");
+    std::cout << "Введите число" << std::endl;
     std::cin >> a;
 
     int b = a / 2;
-    int c = a - b*2;//определяем четность/нечетность числа
+    int c = a - b * 2;//определяем четность/нечетность числа
 
-    setlocale(LC_ALL, "Russian");
     if (a >= 0)
     {
-        if(a==0)
+        if (a == 0)
         {
-            std::cout << "нулевое число" << std::endl;
+            std::cout << "Введено нулевое число" << std::endl;
         }
         else
         {
             if (c == 0)
-            {std::cout << "положительное четное число" << std::endl;}
+            {std::cout << "Введено положительное четное число" << std::endl;}
             else
-            {std::cout << "положительное нечетное число" << std::endl;}
+            {std::cout << "Введено положительное нечетное число" << std::endl;}
         }
     }
     else
     {
-        if(c==0)
-        {std::cout << "отрицательное четное число" << std::endl;}
+        if (c == 0)
+        {std::cout << "Введено отрицательное четное число" << std::endl;}
         else
-        {std::cout << "отрицательное нечетное число" << std::endl;}
+        {std::cout << "Введено отрицательное нечетное число" << std::endl;}
     }
 
     return 0;
