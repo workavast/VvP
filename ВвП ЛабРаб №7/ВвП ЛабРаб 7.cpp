@@ -99,15 +99,19 @@ int main()
         std::cin >> A2 >> B2 >> C2;
 
 
-        y = ((A2 * C1) / A1 - C2) / ((A2 * B1) / A1 - B2);
+        y = ((A2*C1-A1*C2) / (A2*B1-A1*B2));
 
-        x = (C1 - (B1 * y)) / A1;
+        x = ((B2*C1-B1*C2) / (A1*B2-A2*B1));
 
         std::cout << "Решение системы уравнений" << std::endl;
         std::cout << "A1·x + B1·y = C1" << std::endl;
         std::cout << "A2·x + В2·y = C2" << std::endl;
         std::cout << "x = " << x << std::endl;
-        std::cout << "y = " << y << std::endl;
+
+        if (y==-0)
+            std::cout << "y = " << abs(y) << std::endl;
+        else
+            std::cout << "y = " << y << std::endl;
     }
     }
     return 0;
