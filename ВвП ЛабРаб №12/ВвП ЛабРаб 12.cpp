@@ -10,7 +10,7 @@ int main()
 
     switch (LABA)
     {
-    case 1://---
+    case 1://-----------------------------------------------------------------
     {
         std::cout << "\n---Задание №1---\n" << std::endl;
 
@@ -21,105 +21,149 @@ int main()
     std::cout << "Введите номер месяца" << std::endl;
     std::cin >> month;
 
-    if (day > 20)
+    switch (day)
     {
-        if (day > 30)//находится ли день после 30
-        {
-            std::cout << "тридцать ";
-        }
-        else
-        {
-            if (day < 30)//находится ли день между 20 и 30
-            {
-                std::cout << "двадцать ";
-            }
-        }
+    case 1:
+        std::cout << "первое ";
+        break;
+    case 2:
+        std::cout << "второе ";
+        break;
+    case 3:
+        std::cout << "третье ";
+        break;
+    case 4:
+        std::cout << "четвертое ";
+        break;
+    case 5:
+        std::cout << "пятое ";
+        break;
+    case 6:
+        std::cout << "шестое ";
+        break;
+    case 7:
+        std::cout << "седьмое ";
+        break;
+    case 8:
+        std::cout << "восьмое ";
+        break;
+    case 9:
+        std::cout << "девятое ";
+        break;
+    case 10:
+        std::cout << "десятое ";
+        break;
+    case 11:
+        std::cout << "одиннадцатое ";
+        break;
+    case 12:
+        std::cout << "двеннадцатое ";
+        break;
+    case 13:
+        std::cout << "тринадцатое ";
+        break;
+    case 14:
+        std::cout << "четырнадцатое ";
+        break;
+    case 15:
+        std::cout << "пятнадцатое ";
+        break;
+    case 16:
+        std::cout << "шестнадцатое ";
+        break;
+    case 17:
+        std::cout << "семнадцатое ";
+        break;
+    case 18:
+        std::cout << "восемнадцатое ";
+        break;
+    case 19:
+        std::cout << "девятнадцатое ";
+        break;
+    case 20:
+        std::cout << "двадцатое ";
+        break;
+    case 21:
+        std::cout << "двадцать первое ";
+        break;
+    case 22:
+        std::cout << "двадцать второе ";
+        break;
+    case 23:
+        std::cout << "двадцать третье ";
+        break;
+    case 24:
+        std::cout << "двадцать четвертое";
+        break;
+    case 25:
+        std::cout << "двадцать пятое";
+        break;
+    case 26:
+        std::cout << "двадцать шестое";
+        break;
+    case 27:
+        std::cout << "двадцать седьмое";
+        break;
+    case 28:
+        std::cout << "двадцать восьмое";
+        break;
+    case 29:
+        std::cout << "двадцать девятое";
+        break;
+    case 30:
+        std::cout << "тридцатое ";
+        break;
+    case 31:
+        std::cout << "тридцать первое ";
+        break;
     }
 
-    if (day == 20)
-    {std::cout << "двацатое ";}
-    if (day == 30)
-    {std::cout << "тридцатое ";}
-
-    int a = day / 10;
-    int b = day - a * 10;
-
-    if ((day > 9)&(day < 20))
+    switch (month)
     {
-        if (day == 10)
-        {std::cout << "десятое ";}
-        if (day == 11)
-        {std::cout << "одиннадцатое ";}
-        if (day == 12)
-        {std::cout << "двеннадцатое ";}
-        if (day == 13)
-        {std::cout << "тринадцатое ";}
-        if (day == 14)
-        {std::cout << "четырнадцатое ";}
-        if (day == 15)
-        {std::cout << "пятнадцатое ";}
-        if (day == 16)
-        {std::cout << "шестнадцатое ";}
-        if (day == 17)
-        {std::cout << "семнадцатое ";}
-        if (day == 18)
-        {std::cout << "восемнадцатое ";}
-        if (day == 19)
-        {std::cout << "девятнадцатое ";}
+    case 1:
+        std::cout << "января ";
+        break;
+    case 2:
+        std::cout << "февраля ";
+        break;
+    case 3:
+        std::cout << "марта ";
+        break;
+    case 4:
+        std::cout << "апреля ";
+        break;
+    case 5:
+        std::cout << "мая ";
+        break;
+    case 6:
+        std::cout << "июня ";
+        break;
+    case 7:
+        std::cout << "июля ";
+        break;
+    case 8:
+        std::cout << "августа ";
+        break;
+    case 9:
+        std::cout << "сентября ";
+        break;
+    case 10:
+        std::cout << "октября ";
+        break;
+    case 11:
+        std::cout << "ноября ";
+        break;
+    case 12:
+        std::cout << "декабря ";
+        break;
     }
-    else
-    {
-        if (b == 1)
-        {std::cout << "первое ";}
-        if (b == 2)
-        {std::cout << "второе ";}
-        if (b == 3)
-        {std::cout << "третье ";}
-        if (b == 4)
-        {std::cout << "четвертое ";}
-        if (b == 5)
-        {std::cout << "пятое ";}
-        if (b == 6)
-        {std::cout << "шестое ";}
-        if (b == 7)
-        {std::cout << "седьмое ";}
-        if (b == 8)
-        {std::cout << "восьмое ";}
-        if (b == 9)
-        {std::cout << "девятое ";}
     }
-
-    if (month == 1)
-    {std::cout << "января " << std::endl;}
-    if (month == 2)
-    {std::cout << "февраля " << std::endl;}
-    if (month == 3)
-    {std::cout << "марта " << std::endl;}
-    if (month == 4)
-    {std::cout << "апреля " << std::endl;}
-    if (month == 5)
-    {std::cout << "мая " << std::endl;}
-    if (month == 6)
-    {std::cout << "июня " << std::endl;}
-    if (month == 7)
-    {std::cout << "июля " << std::endl;}
-    if (month == 8)
-    {std::cout << "августа " << std::endl;}
-    if (month == 9)
-    {std::cout << "сентября " << std::endl;}
-    if (month == 10)
-    {std::cout << "октября " << std::endl;}
-    if (month == 11)
-    {std::cout << "ноября" << std::endl;}
-    if (month == 12)
-    {std::cout << "декабря " << std::endl;}
-    }
-    case 2://---
+    case 2://-----------------------------------------------------------------
     {
         std::cout << "\n---Задание №2---\n" << std::endl;
 
         int N;
-        std::cout << "Введите для робота направленного на север номер команды, где 0 — продолжать движение, 1 — поворот налево, −1 — поворот направо" << std::endl;
+        std::cout << "Введите для робота направленного на север номер команды, где 0 — продолжать движение, 1 — поворот налево, -1 — поворот направо" << std::endl;
         std::cin >> N;
 
         if (N == 0)
@@ -138,7 +182,7 @@ int main()
             }
         }
     }
-    case 3://---
+    case 3://-----------------------------------------------------------------
     {
         std::cout << "\n---Задание №3---\n" << std::endl;
 
@@ -220,7 +264,7 @@ int main()
     else
     {std::cout << "учебное задание" << std::endl;}
     }
-    case 4://---
+    case 4://-----------------------------------------------------------------
     {
         std::cout << "\n---Задание №4---\n" << std::endl;
 
@@ -292,16 +336,16 @@ int main()
         if (N10==4)
         {std::cout << "сорок ";}
         if (N10==5)
-        {std::cout << "пятдесят ";}
+        {std::cout << "пятьдесят ";}
     }
     else
     {
         if (N10==6)
-        {std::cout << "шестдесть ";}
+        {std::cout << "шестдесят ";}
         if (N10==7)
-        {std::cout << "семдесять ";}
+        {std::cout << "семьдесят ";}
         if (N10==8)
-        {std::cout << "восемдесять ";}
+        {std::cout << "восемьдесят ";}
         if (N10==9)
         {std::cout << "девяносто ";}
     }
@@ -335,7 +379,7 @@ int main()
         }
     }
     }
-    case 5://---
+    case 5://-----------------------------------------------------------------
     {
         std::cout << "\n---Задание №5---\n" << std::endl;
 
