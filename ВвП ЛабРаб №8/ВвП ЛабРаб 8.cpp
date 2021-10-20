@@ -19,9 +19,19 @@ int main()
         std::cout << "Введите число байт" << std::endl;
         std::cin >> Bait;
 
-        int KBait = Bait / 1024;//находим чило полных килобайтов
+        int ost = fmod(Bait, 1024);
 
-        std::cout << "Число полных килобайт в заданых байт = " << KBait << std::endl;
+        int KBait = Bait / 1024;//находим чило полных килобайтов
+        if (ost == 0)
+        {
+            std::cout << "Число полных килобайт в заданых байт = " << KBait << std::endl;
+        }
+        else
+        {
+            KBait=KBait+1;
+            std::cout << "Число полных килобайт в заданых байт = " << KBait << std::endl;
+
+        }
     }
     case 2://---
     {
@@ -29,10 +39,10 @@ int main()
 
         double A, B;
 
-        std::cout << "Введите длинну отрезка В" << std::endl;
-        std::cin >> B;
         std::cout << "Введите длинну отрезка А, который больше отрезка В" << std::endl;
         std::cin >> A;
+        std::cout << "Введите длинну отрезка В" << std::endl;
+        std::cin >> B;
 
         int total = A / B;
 
@@ -44,10 +54,10 @@ int main()
 
         double A, B;
 
-        std::cout << "Введите длинну отрезка В" << std::endl;
-        std::cin >> B;
         std::cout << "Введите длинну отрезка А, который больше чем В" << std::endl;
         std::cin >> A;
+        std::cout << "Введите длинну отрезка В" << std::endl;
+        std::cin >> B;
 
         int total = A / B;//количество полных отрезков В на отрезке А
         total = A - total * B;//длина незанятой части отрезка A

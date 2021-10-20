@@ -61,7 +61,7 @@ int main()
 
         int a;
 
-        std::cout << "Введите трех значное число" << std::endl;
+        std::cout << "Введите трехзначное число" << std::endl;
         std::cin >> a;
 
         int a1 = a / 100;
