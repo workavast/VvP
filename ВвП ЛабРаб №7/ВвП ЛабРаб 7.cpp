@@ -50,9 +50,10 @@ int main()
         std::cin >> Y;
 
         double price_1kg = A / X;//цена 1-го кг конфет
-        double total = (1 + Y) * price_1kg;//цена Y+1 кг конфет
+        double total = Y * price_1kg;//цена Y кг конфет
 
-        std::cout << "Цена второй пачки конфет + цена 1 кг этих же конфет = " << total << std::endl;
+        std::cout << "Цена 1 кг этих конфет = " << price_1kg << std::endl;
+        std::cout << "Цена второй пачки конфет = " << total << std::endl;
     }
     case 4://---
     {
