@@ -52,22 +52,39 @@ int main()
     {
         std::cout << "\n---Задание №3---\n" << std::endl;
 
-        int a, b, c;
+        double ax, ay, bx, by, cx, cy;
+        double abx, aby, acx, acy;
+        std::cout << "Введите через пробел координаты точки А" << std::endl;
+        std::cin >> ax >> ay;
+        std::cout << "Введите через пробел координаты точки В" << std::endl;
+        std::cin >> bx >> by;
+        std::cout << "Введите через пробел координаты точки С" << std::endl;
+        std::cin >> cx >> cy;
 
-        std::cout << "Введите через пробел координаты по оси х для трех точек А, В, С, где В не равен С" << std::endl;
-        std::cin >> a >> b >> c;
+        abx = bx - ax;
+        aby = by - ay;
+        acx = cx - ax;
+        acy = cy - ay;
 
-        int ab = abs(b - a);//определяем длинну отрезка ab
-        int ac = abs(c - a);//определяем длинну отрезка ac
+        double ab = sqrt(abx*abx+aby*aby);//определяем длинну отрезка ab
+        double ac = sqrt(acx*acx+acy*acy);//определяем длинну отрезка ac
 
-        if (ab <= ac)
+        if (ab == ac)
         {
-            std::cout << "К точке А ближе точка B, растояние между ними = " << ab << std::endl;
+            std::cout << "Точки B и C равноудаленны от точки А, расстояние = " << ab << std::endl;
         }
         else
         {
-            std::cout << "К точке А ближе точка С, растояние между ними =" << ac << std::endl;
+            if (ab <= ac)
+            {
+                std::cout << "К точке А ближе точка B, растояние между ними = " << ab << std::endl;
+            }
+            else
+            {
+                std::cout << "К точке А ближе точка С, растояние между ними =" << ac << std::endl;
+            }
         }
+
     }
     case 4://---
     {
@@ -86,7 +103,7 @@ int main()
             }//первая четверть имеет вид +x;+y
             else
             {
-                std::cout << "точка рассположена в третьей четверти" << std::endl;
+                std::cout << "точка рассположена в четвертой четверти" << std::endl;
             }//третья четверть имеет вид +x;-y
         }
         else
@@ -97,7 +114,7 @@ int main()
             }//вторая четверть имеет вид -x;+y
             else
             {
-                std::cout << "точка рассположена в четвертой четверти" << std::endl;
+                std::cout << "точка рассположена в третьей четверти" << std::endl;
             }//четвертая четверть имеет вид -x;-y
         }
     }
